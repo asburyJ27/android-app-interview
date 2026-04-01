@@ -18,7 +18,7 @@ class MainViewModel @Inject constructor(
     private val repository: HackerNewsRepository,
 ) : ViewModel() {
 
-    private val _uiStateFlow = MutableStateFlow<UiState>(UiState.Loading)
+    private var _uiStateFlow = MutableStateFlow<UiState>(UiState.Loading)
     val uiStateFlow = _uiStateFlow.asStateFlow()
 
     init {
