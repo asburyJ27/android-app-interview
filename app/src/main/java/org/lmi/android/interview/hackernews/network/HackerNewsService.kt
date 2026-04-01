@@ -1,8 +1,5 @@
 package org.lmi.android.interview.hackernews.network
 
-import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
-
 val BASE_URL = "https://hacker-news.firebaseio.com/"
 
 /**
@@ -15,7 +12,6 @@ val BASE_URL = "https://hacker-news.firebaseio.com/"
 // https://hacker-news.firebaseio.com/v0/item/26068032.json?print=pretty
 interface HackerNewsService
 
-@Parcelize
 data class Item(
     val id: Int,
     val title: String,
@@ -27,4 +23,4 @@ data class Item(
     val kids: List<Int>?,
     val score: Int?,
     val url: String?,
-) : Parcelable
+)
