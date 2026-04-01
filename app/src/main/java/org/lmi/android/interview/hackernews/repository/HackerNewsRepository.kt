@@ -1,4 +1,4 @@
-package com.kroger.android.interview.hackernews.repository
+package org.lmi.android.interview.hackernews.repository
 
 /**
  *  Repository for fetching hacker news data

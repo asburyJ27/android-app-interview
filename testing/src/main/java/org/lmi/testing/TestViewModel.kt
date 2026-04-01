@@ -1,4 +1,4 @@
-package com.kroger.testing
+package org.lmi.testing
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -13,7 +13,7 @@ class TestViewModel(private val testRepo: TestRepo) : ViewModel() {
 
     fun getSomeData(useCachedData: Boolean) {
         viewModelScope.launch {
-            val repoData = kotlin.runCatching {
+            val repoData = runCatching {
                 UiState.ShowUi(
                     when (testRepo.getData(useCachedData)) {
                         is TestRepo.TestRepoResponse.NotCached -> false

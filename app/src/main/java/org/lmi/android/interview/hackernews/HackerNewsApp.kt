@@ -1,4 +1,4 @@
-package com.kroger.android.interview.hackernews
+package org.lmi.android.interview.hackernews
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

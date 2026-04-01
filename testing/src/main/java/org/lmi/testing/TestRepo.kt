@@ -1,4 +1,4 @@
-package com.kroger.testing
+package org.lmi.testing
 
 class TestRepo {
 

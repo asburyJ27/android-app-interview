@@ -1,4 +1,4 @@
-package com.kroger.android.interview.hackernews.network
+package org.lmi.android.interview.hackernews.network
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
